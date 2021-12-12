@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".part3">
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+
+        android:src="@drawable/ic_profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="48dp"
+        android:src="@drawable/ic_message"
+        app:layout_constraintEnd_toEndOf="@+id/profile"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/hello"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="monospace"
+            android:text="hello "
+            android:textColor="@color/black"
+            android:textSize="30sp"
+             />
+
+        <TextView
+            android:id="@+id/foodie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:textColor="@color/black"
+            android:fontFamily="@font/actor"
+            android:text=" Foodie!"
+            android:textStyle="bold"
+            android:textSize="30sp"
+    />
+    </LinearLayout>
+
+<LinearLayout
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/hello"
+    >
+    <EditText
+
+        android:id="@+id/search_bar"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+
+        android:background="@drawable/search_bar"
+       />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        style="?android:attr/borderlessButtonStyle"
+
+        android:background="?android:selectableItemBackground"
+        android:src="@drawable/search"/>
+</LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll" />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="25dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/rv">
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        >
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="66dp"
+            android:layout_gravity="end|top"
+            android:elevation="2dp"
+            android:outlineProvider="none"
+            android:src="@drawable/ic_burger" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:layout_margin="@dimen/margin_medium"
+
+            android:backgroundTint="@color/blue_grey_50"
+            app:cardCornerRadius="@dimen/margin_medium_plus"
+            app:cardElevation="@dimen/default_elevation">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="monospace"
+                    android:text="Burger"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/actor"
+                    android:text="some necessary details"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:progressTint="@color/orange_A700"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:rating="4.5"
+                    android:numStars="5" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        >
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="66dp"
+            android:layout_gravity="end|top"
+            android:elevation="2dp"
+            android:outlineProvider="none"
+            android:src="@drawable/ic_burger" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:layout_margin="@dimen/margin_medium"
+
+            android:backgroundTint="@color/blue_grey_50"
+            app:cardCornerRadius="@dimen/margin_medium_plus"
+            app:cardElevation="@dimen/default_elevation">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="monospace"
+                    android:text="Burger"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/actor"
+                    android:text="some necessary details"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:progressTint="@color/orange_A700"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:rating="4.5"
+                    android:numStars="5" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        >
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="66dp"
+            android:layout_gravity="end|top"
+            android:elevation="2dp"
+            android:outlineProvider="none"
+            android:src="@drawable/ic_burger" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:layout_margin="@dimen/margin_medium"
+
+            android:backgroundTint="@color/blue_grey_50"
+            app:cardCornerRadius="@dimen/margin_medium_plus"
+            app:cardElevation="@dimen/default_elevation">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="monospace"
+                    android:text="Burger"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/actor"
+                    android:text="some necessary details"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:progressTint="@color/orange_A700"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:rating="4.5"
+                    android:numStars="5" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+
+
+</LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

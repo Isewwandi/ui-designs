@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:layout_marginBottom="@dimen/margin_medium"
+
+        android:clickable="true"
+        android:fontFamily="sans-serif-medium"
+
+
+        android:foreground="@drawable/btn_bg_food"
+
+        android:gravity="center"
+        android:paddingTop="@dimen/padding_large"
+        android:text="ishara"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_medium"
+        app:cardCornerRadius="50dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:innerRadius="0dp"
+            android:paddingLeft="15dp"
+            android:shape="ring"
+            app:cardCornerRadius="75dp">
+
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_design" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="120dp"
+            android:gravity="center"
+            android:text="pizza"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+</RelativeLayout>

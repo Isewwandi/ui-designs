@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+   >
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/white"
+      android:orientation="vertical"
+      android:weightSum="5">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.2"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_1" />
+  </LinearLayout>
+  <ImageView
+      android:layout_marginLeft="150dp"
+      android:layout_marginTop="70dp"
+      android:layout_width="300dp"
+      android:layout_height="400dp"
+      android:src="@drawable/man" />
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+    <ImageView
+
+        android:onClick="backbtn"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+      android:src="@drawable/ic_arrow_back"
+      android:layout_marginLeft="0dp"
+      android:layout_marginBottom="@dimen/margin_small"
+      />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_medium"
+        android:fontFamily="@font/baloo"
+        android:text="Cryptocurrency \n Landing Page"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_extremely_extra_large" />
+
+
+    <LinearLayout
+        android:layout_width="182dp"
+        android:layout_height="67dp"
+        android:orientation="horizontal">
+
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:layout_width="70dp"
+          android:layout_height="70dp"
+          android:layout_gravity="center"
+          android:layout_marginLeft="15dp"
+          android:src="@drawable/girl" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="25dp"
+          android:layout_marginTop="25dp"
+          android:fontFamily="@font/allerta"
+          android:text="samantha"
+          android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+      <TextView
+          android:layout_width="200dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="15dp"
+          android:fontFamily="sans-serif"
+          android:textColor="@color/white"
+          android:layout_marginLeft="15dp"
+          android:text="@string/lorem"
+         />
+
+
+
+    </LinearLayout>
+
+
+
+  </LinearLayout>
+
+  <LinearLayout
+
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+    android:orientation="vertical"
+      android:layout_marginTop="400dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+      android:orientation="vertical">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+        android:orientation="horizontal"
+          android:weightSum="3"
+          android:layout_marginLeft="@dimen/margin_large"
+          android:layout_marginRight="@dimen/margin_large"
+          android:layout_marginTop="@dimen/margin_large">
+
+       <ImageButton
+           android:layout_width="50dp"
+           android:layout_height="100dp"
+         android:backgroundTint="@color/red_200"
+         android:background="@drawable/btn_part1"
+           android:layout_marginRight="10dp"
+           android:src="@drawable/ic_pdf"
+           android:layout_weight="1"
+           android:gravity="center"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/indigo_300"
+            android:background="@drawable/btn_part1"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:src="@drawable/ic_video"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:backgroundTint="@color/orange_400"
+            android:background="@drawable/btn_part1"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:src="@drawable/ic_file"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:weightSum="3"
+          android:layout_marginLeft="@dimen/margin_large"
+          android:layout_marginTop="@dimen/margin_large"
+          android:layout_marginRight="@dimen/margin_large">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:backgroundTint="@color/purple_300"
+            android:background="@drawable/btn_part1"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:src="@drawable/ic_music"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:backgroundTint="@color/green_400"
+            android:background="@drawable/btn_part1"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:src="@drawable/ic_excel"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:backgroundTint="@color/light_blue_500"
+            android:background="@drawable/btn_part1"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:src="@drawable/ic_word"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+
+      </LinearLayout>
+    </LinearLayout>
+
+
+  </LinearLayout>
+
+  </FrameLayout>

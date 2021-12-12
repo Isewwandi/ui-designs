@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#4AE17399"/>
+    <stroke
+        android:color="#8FF48FB1"
+        android:width="2dp"
+        />
+
+    <size android:width="@dimen/button_height"
+        android:height="@dimen/list_item_height"/>
+
+    <corners android:radius="48dp"/>
+
+</shape>
